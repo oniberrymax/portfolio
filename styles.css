@@ -158,6 +158,9 @@ h2 span
 .btn span {
     font-size: 17px;
 }
+.btn-ghost {
+	color: white;
+}
 .btn-primary {
     background: var(--accent);
     border-color: var(--accent-text);
@@ -721,6 +724,12 @@ h2 span
     letter-spacing: .1em;
     margin-bottom: 7px;
 }
+.project-info ul>li {
+    font-size: 12px;
+    color: var(--muted);
+    margin: 0;
+    max-width: 540px;
+}
 .project-info h3 {
     font-size: 23px;
     margin: 0 0 5px;
@@ -1270,6 +1279,9 @@ h2 span
 .light .visual-help
 {
     background: #e9ece4;
+}
+.light .btn-ghost {
+	color: #11130f;
 }
 .light .modal .modal-backdrop {
     background: rgba(30, 32, 25, .55)!important;
