@@ -14,3 +14,14 @@ const glow=document.querySelector('.cursor-glow');window.addEventListener('point
 
 const navLinks=document.getElementById('navLinks');
 if(navLinks){navLinks.querySelectorAll('.nav-link').forEach(link=>link.addEventListener('click',()=>{if(window.jQuery)jQuery(navLinks).collapse('hide')}));}
+
+$('#videoModal').on('show.bs.modal', function (event) {
+    const card = $(event.relatedTarget);
+    const videoUrl = card.data('video');
+
+    $('#videoFrame').attr('src', videoUrl + '?autoplay=1');
+});
+
+$('#videoModal').on('hidden.bs.modal', function () {
+    $('#videoFrame').attr('src', '');
+});

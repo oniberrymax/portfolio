@@ -1540,7 +1540,6 @@ h2 span
     }
 }
 .video-modal-content {
-    position: relative;
     background: #000;
     border: 0;
     border-radius: 12px;
@@ -1549,10 +1548,9 @@ h2 span
 
 .video-close {
     position: absolute;
-    top: 10px;
     right: 15px;
+    top: 10px;
     z-index: 10;
-
     color: #fff;
     opacity: 1;
     font-size: 30px;
@@ -1560,5 +1558,4 @@ h2 span
 
 .video-close:hover {
     color: #fff;
-    opacity: 1;
 }
